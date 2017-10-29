@@ -6136,7 +6136,7 @@ function wpgmaps_load_jquery() {
                 wp_register_script('jquery', '//code.jquery.com/jquery-1.11.3.min.js', false, "1.11.3");
         }
         }
-        wp_enqueue_script('jquery');
+        wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), null, true);
     }
 }
 add_action('wp_enqueue_scripts', 'wpgmaps_load_jquery', 9999);

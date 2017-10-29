@@ -32,7 +32,7 @@ class Hugeit_Slider_Admin_Assets {
 	}
 
 	private function enqueue_scripts() {
-		wp_enqueue_script('jquery');
+		wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), null, true);
 		wp_enqueue_script('jquery-ui-core');
 		wp_enqueue_script('jquery-ui-draggable');
 		wp_enqueue_script('jquery-ui-tabs');

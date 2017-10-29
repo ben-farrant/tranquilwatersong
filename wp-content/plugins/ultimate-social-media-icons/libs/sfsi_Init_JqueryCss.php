@@ -28,7 +28,7 @@ function theme_back_enqueue_script()
 		{
 			if($_GET['page'] == 'sfsi-options')
 			{
-				wp_enqueue_script('jquery');
+				wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), null, true);
 			 	wp_enqueue_script("jquery-migrate");
 				
 				wp_enqueue_script('media-upload');
@@ -60,7 +60,7 @@ add_action( 'admin_enqueue_scripts', 'theme_back_enqueue_script' );
 
 function theme_front_enqueue_script()
 {
-		wp_enqueue_script('jquery');
+		wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), null, true);
 	 	wp_enqueue_script("jquery-migrate");
 		
 		wp_enqueue_script('jquery-ui-core');

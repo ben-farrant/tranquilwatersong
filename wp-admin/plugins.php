@@ -259,7 +259,7 @@ if ( $action ) {
 			$parent_file = 'plugins.php';
 
 			if ( ! isset($_REQUEST['verify-delete']) ) {
-				wp_enqueue_script('jquery');
+				wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', array(), null, true);
 				require_once(ABSPATH . 'wp-admin/admin-header.php');
 				?>
 			<div class="wrap">
